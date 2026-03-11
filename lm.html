@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LM & Slack</title>
+</head>
+<body>
+
+<header>
+    <a href="menu.html">
+        <img src="img/icons8-cardápio-50.png" alt="Menu Hamburguer">Menu
+    </a>
+    <h1>Roster</h1>
+    <a href="perfil.html">
+        <img src="img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil">Perfil
+    </a>
+    <a href="#">
+        <img src="img/sino.png" alt="Sino">
+    </a>
+</header>
+
+<main>
+
+<h2>LM & Slack</h2>
+<p>Comunique-se.</p>
+
+<form action="confirmar_lm.html" method="get">
+
+    <p>Motivo</p>
+    <select name="motivo">
+        <option>Selecione</option>
+        <option>Emergência Familiar</option>
+        <option>Doença (Licença Médica)</option>
+        <option>Outros</option>
+    </select>
+
+    <br><br>
+
+    <p>Observação</p>
+    <textarea name="observacao" rows="5" cols="30">
+Descreva brevemente sua situação...
+    </textarea>
+
+    <br><br>
+
+    <p>Laudo Médico</p>
+    <input type="file" name="laudo">
+
+    <br><br>
+
+    <button type="submit">ENVIAR</button>
+
+</form>
+
+<h3>Histórico</h3>
+<p>Licença Médica - Aprovado</p>
+
+</main>
+
+<footer>
+    <p>Copyright © 2024 Roster.</p>
+</footer>
+
+</body>
+</html>
