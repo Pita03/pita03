@@ -1,293 +1,300 @@
- *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        :root {
-            --azul-principal: #1a3a6e;
-            --azul-escuro: #122d5a;
-            --azul-claro: #2351a0;
-            --branco: #ffffff;
-            --cinza-fundo: #f0f4fa;
-            --cinza-texto: #6b7a99;
-            --cinza-borda: #d8e0ef;
-            --vermelho: #c0392b;
-            --texto-dark: #1a2a4a;
-            --sombra: 0 4px 16px rgba(26, 58, 110, 0.13);
-            --radius: 14px;
-            --radius-sm: 8px;
-        }
-        html, body {
-            width: 100%;
-        }
-        body {
-            font-family: 'Nunito', sans-serif;
-            background-color: var(--cinza-fundo);
-            color: var(--texto-dark);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background: var(--branco);
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        
-        header {
-            background-color: var(--azul-principal);
-            color: var(--branco);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        header h1 {
-            font-size: 1.3rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: var(--branco);
-        }
-
-        .header-icons {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        header a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 3px;
-            color: var(--branco);
-            font-size: 0.62rem;
-            font-weight: 600;
-            opacity: 0.9;
-            transition: opacity 0.2s;
-        }
-
-        header a:hover {
-            opacity: 1;
-        }
-
-        header a img {
-            width: 22px;
-            height: 22px;
-            filter: brightness(0) invert(1);
-        }
-
-        main {
-            flex: 1;
-            padding: 20px 16px 28px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background: var(--branco);
-        }
-
-        /* ===== SAUDAÇÃO ===== */
-        .saudacao h2 {
-            font-size: 1.35rem;
-            font-weight: 800;
-            color: var(--texto-dark);
-            line-height: 1.2;
-        }
-
-        .saudacao h3 {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--cinza-texto);
-            margin-top: 4px;
-        }
-
-        /* ===== BOTÕES DE AÇÃO ===== */
-        .acoes-lista {
-            display: flex;
-            justify-content: space-evenly;
-            gap: 12px;
-            flex-wrap: wrap;
-            
-        }
-
-        .acoes-lista li {
-            flex: 1 1 30%
-        }
-        
-        .acoes-lista li a {
-            background-color: var(--azul-principal);
-            color: var(--branco);
-            border-radius: var(--radius-sm);
-            padding: 12px 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 1;
-            text-align: center;
-            box-shadow: var(--sombra);
-        }
-
-        .acoes-lista li a:hover {
-            background-color: var(--azul-claro);
-            transform: translateY(-2px);
-        }
-
-        .acoes-lista li a img {
-            width: 26px;
-            height: 26px;
-            filter: brightness(0) invert(1);
-        }
-
-        /* ===== SEÇÃO JORNADA ===== */
-        .jornada-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .jornada-header h2 {
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: var(--texto-dark);
-        }
-
-        .jornada-header a {
-            font-size: 0.82rem;
-            font-weight: 700;
-            color: var(--azul-claro);
-            border-bottom: 1.5px solid var(--azul-claro);
-        }
-
-        /* ===== CARD DE JORNADA ===== */
-        .card-jornada {
-            background-color: var(--azul-principal);
-            border-radius: var(--radius);
-            padding: 16px 18px;
-            color: var(--branco);
-            box-shadow: var(--sombra);
-        }
-
-        .card-jornada-topo {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-            opacity: 0.9;
-        }
+:root {
+    --azul-principal: #0D2D8C;
+    --azul-escuro: #122d5a;
+    --azul-claro: #2351a0;
+    --branco: #ffffff;
+    --cinza-fundo: #f0f4fa;
+    --cinza-texto: #6b7a99;
+    --cinza-borda: #d8e0ef;
+    --vermelho: #c0392b;
+    --texto-dark: #1a2a4a;
+    --sombra: 0 4px 16px rgba(26, 58, 110, 0.13);
+    --radius: 14px;
+    --radius-sm: 8px;
+}
 
 
-        .voos-lista {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
 
-        .voo-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--branco);
+    color: var(--texto-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-        .voo-indicador {
-            width: 10px;
-            height: 10px;
-            background-color: #b5966a;
-            border-radius: 2px;
-            flex-shrink: 0;
-        }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-        .voo-card {
-            background: rgba(255,255,255,0.13);
-            border-radius: var(--radius-sm);
-            padding: 8px 14px;
-            flex: 1;
-        }
+ul {
+    list-style: none;
+}
 
-        .voo-horario {
-            font-size: 0.68rem;
-            font-weight: 600;
-            opacity: 0.8;
-            margin-bottom: 3px;
-        }
+header {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
-        .voo-rota {
-            font-size: 0.95rem;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
+header h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 
-        .voo-rota img {
-            width: 16px;
-            height: 16px;
-            filter: brightness(0) invert(1);
-        }
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 
-    
-        .voos-conector {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: var(--branco);
+    font-size: 0.62rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
 
-        footer {
-            background-color: var(--cinza-fundo);
-            border-top: 1px solid var(--cinza-borda);
-            padding: 16px 20px 12px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 4px;
-        }
+header a img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
 
-        footer h3 {
-            font-size: 0.82rem;
-            font-weight: 700;
-            color: var(--cinza-texto);
-        }
+main {
+    flex: 1;
+    padding: 20px 16px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--branco);
+}
 
-        footer > h3 {
-            align-self: stretch;
-            display: flex;
-            justify-content: space-between;
-        }
+.saudacao h2 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--texto-dark);
+    line-height: 1.2;
+}
 
-       
-        footer h3:first-of-type,
-        footer h3:nth-of-type(2) {
-            display: inline;
-        }
+.saudacao h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--cinza-texto);
+    margin-top: 4px;
+}
 
-        footer {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
+.acoes-lista {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-        footer p {
-            font-size: 0.65rem;
-            color: var(--cinza-borda);
-            width: 100%;
-            text-align: center;
-            margin-top: 6px;
-        }
+.acoes-lista li {
+    flex: 1 1 30%;
+}
+
+.acoes-lista li a {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    border-radius: var(--radius-sm);
+    padding: 8px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    width: 100%;
+    aspect-ratio: 1;
+    text-align: center;
+    box-shadow: var(--sombra);
+}
+
+.acoes-lista li a:hover {
+    background-color: var(--azul-claro);
+    transform: translateY(-2px);
+}
+
+.acoes-lista li a img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+}
+
+.jornada-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -7px;
+}
+
+.jornada-header h2 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--texto-dark);
+}
+
+.jornada-header a {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--azul-claro);
+    border-bottom: 1.5px solid var(--azul-claro);
+}
+
+.card-jornada {
+    margin-top: 12px;
+    margin-bottom: 14px;
+    background-color: var(--azul-principal);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    color: var(--branco);
+    box-shadow: var(--sombra);
+}
+
+.card-jornada-topo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 8px 14px;
+    margin-bottom: 6px;
+    opacity: 0.9;
+}
+
+.voos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.voo-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.voo-indicador {
+    width: 10px;
+    height: 10px;
+    background-color: #730202;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.voo-card {
+    background: rgba(255,255,255,0.13);
+    border-radius: var(--radius-sm);
+    padding: 8px 14px;
+    flex: 1;
+}
+
+.voo-horario {
+    font-size: 0.68rem;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+
+.voo-rota {
+    font-size: 0.95rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.voo-rota img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+.status-card {
+    display: block;
+    background-color: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    box-shadow: var(--sombra);
+    color: var(--texto-dark);
+}
+
+.status-titulo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.status-titulo img {
+    width: 20px;
+    height: 20px;
+}
+
+.status-barra {
+    width: 100%;
+    height: 12px;
+    margin: 8px 0 12px;
+}
+
+.status-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 0.75rem;
+    color: var(--cinza-texto);
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--cinza-fundo);
+    border-top: 1px solid var(--cinza-borda);
+    padding: 16px 20px 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--cinza-texto);
+}
+
+footer p {
+    font-size: 0.65rem;
+    color: var(--texto-dark);
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+}
