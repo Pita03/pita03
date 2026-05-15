@@ -4,116 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roster</title>
-    <link rel="reset" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-
 <body>
-    <body>
-    <header>
-        <a href="menu.html" class="header-menu">
-            <img src="./img/icons8-cardápio-50.png" alt="Menu Hamburguer">
-            Menu
+<header>
+    <a href="menu.html" class="header-menu">
+        <img src="./img/icons8-cardápio-50.png" alt="Menu Hamburguer">
+        Menu
+    </a>
+
+    <h1>Roster</h1>
+
+    <nav class="header-icons">
+        <a href="perfil.html">
+            <img src="img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil">
+            Perfil
         </a>
+        <a href="#">
+            <img src="./img/bell_ring.png" alt="Sino">
+        </a>
+    </nav>
+</header>
 
-        <h1>Roster</h1>
 
-        <nav class="header-icons">
-            <a href="perfil.html">
-                <img src="img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil">
-                Perfil
+<main>
+
+    <!-- Saudação -->
+    <section class="saudacao">
+        <h2>Olá, Goret!</h2>
+        <h3>Tenha um excelente voo.</h3>
+    </section>
+
+    <!-- Botões de ação -->
+    <ul class="acoes-lista">
+        <li>
+            <a href="boarding/boarding.html">
+                <img src="img/mala.png" alt="Embarque">
+                Embarque
             </a>
-            <a href="#">
-                <img src="./img/bell_ring.png" alt="Sino">
+        </li>
+        <li>
+            <a href="trade/escolher_pessoa.html">
+                <img src="img/trade.png" alt="Troca">
+                Troca
             </a>
-        </nav>
-    </header>
+        </li>
+        <li>
+            <a href="LM/lm.html">
+                <img src="img/sol.png" alt="Licença médica">
+                Licença
+            </a>
+        </li>
+    </ul>
 
+    <!-- Jornada -->
+    <section class="jornada-header">
+        <h2>Sua Jornada</h2>
+        <a href="ver_escala.html">Ver escala</a>
+    </section>
 
-    <main>
+    <!-- Card de voos -->
+    <article class="card-jornada">
+        <header class="card-jornada-topo">
+            <span>04/03/2026</span>
+            <span>Base: GRU</span>
+        </header>
 
-        <!-- Saudação -->
-        <section class="saudacao">
-            <h2>Olá, Goret!</h2>
-            <h3>Tenha um excelente voo.</h3>
-        </section>
-
-        <!-- Botões de ação -->
-        <ul class="acoes-lista">
-            <li>
-                <a href="boarding/boarding.html">
-                    <img src="img/mala.png" alt="Embarque">
-                    Embarque
-                </a>
+        <ul class="voos-lista">
+            <li class="voo-item">
+                <span class="voo-indicador"></span>
+                <span class="voo-card">
+                    <p class="voo-horario">8:45 ▶ 10:30</p>
+                    <strong class="voo-rota">GRU → GIG</strong>
+                </span>
             </li>
-            <li>
-                <a href="trade/escolher_pessoa.html">
-                    <img src="img/trade.png" alt="Troca">
-                    Troca
-                </a>
-            </li>
-            <li>
-                <a href="LM/lm.html">
-                    <img src="img/sol.png" alt="Licença médica">
-                    Licença
-                </a>
+
+            <li class="voo-item">
+                <span class="voo-indicador"></span>
+                <span class="voo-card">
+                    <p class="voo-horario">8:45 ▶ 10:30</p>
+                    <strong class="voo-rota">GRU → SSA</strong>
+                </span>
             </li>
         </ul>
+    </article>
 
-        <!-- Jornada -->
-        <section class="jornada-header">
-            <h2>Sua Jornada</h2>
-            <a href="ver_escala.html">Ver escala</a>
-        </section>
+    <!-- Status / Fadigômetro -->
+    <a href="status.html" class="status-card">
+        <p class="status-titulo">
+            <img src="img/termometro.png" alt="Fadigômetro">
+            Status
+        </p>
+        <meter class="status-barra" min="0" max="100" value="55"></meter>
+        <p class="status-info">
+            <span>65h voadas no mês</span>
+            <span>5 voos restantes</span>
+        </p>
+    </a>
 
-        <!-- Card de voos -->
-        <article class="card-jornada">
-            <header class="card-jornada-topo">
-                <span>04/03/2026</span>
-                <span>Base: GRU</span>
-            </header>
+</main>
 
-            <ul class="voos-lista">
-                <li class="voo-item">
-                    <span class="voo-indicador"></span>
-                    <span class="voo-card">
-                        <p class="voo-horario">8:45 ▶ 10:30</p>
-                        <strong class="voo-rota">GRU → GIG</strong>
-                    </span>
-                </li>
 
-                <li class="voo-item">
-                    <span class="voo-indicador"></span>
-                    <span class="voo-card">
-                        <p class="voo-horario">8:45 ▶ 10:30</p>
-                        <strong class="voo-rota">GRU → SSA</strong>
-                    </span>
-                </li>
-            </ul>
-        </article>
-
-        <!-- Status / Fadigômetro -->
-        <a href="status.html" class="status-card">
-            <p class="status-titulo">
-                <img src="img/termometro.png" alt="Fadigômetro">
-                Status
-            </p>
-            <meter class="status-barra" min="0" max="100" value="55"></meter>
-            <p class="status-info">
-                <span>65h voadas no mês</span>
-                <span>5 voos restantes</span>
-            </p>
-        </a>
-
-    </main>
-
-    
-    <footer>
-        <h3>GRU - SP</h3>
-        <h3>Latam Airlines</h3>
-        <p>Copyright © 2024 Roster. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+    <h3>GRU - SP</h3>
+    <h3>Latam Airlines</h3>
+    <p>Copyright © 2024 Roster. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
