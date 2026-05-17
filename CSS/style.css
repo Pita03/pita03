@@ -586,7 +586,7 @@ footer p {
   transform: translateY(-2px);
 }
 
-/*Confirmação*/
+
 
 
 .confirmacao-main {
@@ -630,7 +630,7 @@ footer p {
   transform: translateY(-3px);
 }
 
-/* PERFIL — opções empilhadas, clean com linhas horizontais */
+/* PERFIL */
 .roster-page .main-content {
     padding: 0;
     min-height: calc(100vh - 64px);
@@ -769,7 +769,7 @@ footer p {
     filter: brightness(0) invert(1);
 }
  
-/* ---- Topo do perfil (fundo azul + avatar + barra de nome) ---- */
+
 .roster-page .main-content {
     padding: 0;
     background: var(--branco);
@@ -805,7 +805,7 @@ footer p {
     display: block;
 }
  
-/* Barra azul-médio com nome e cargo (inspirada no "Dr. John Smith / Neurologist") */
+
 .roster-page .perfil-top__namebar {
     width: 100%;
     margin-top: 14px;
@@ -829,7 +829,7 @@ footer p {
     color: rgba(255, 255, 255, 0.85);
 }
  
-/* ---- Lista de opções do perfil ---- */
+
 .roster-page .perfil-menu {
     list-style: none;
     margin: 0;
@@ -856,7 +856,7 @@ footer p {
     background: var(--cinza-fundo);
 }
  
-/* Caixa do ícone */
+
 .roster-page .perfil-menu__icon {
     width: 40px;
     height: 40px;
@@ -872,7 +872,7 @@ footer p {
     height: 22px;
 }
  
-/* Cores dos ícones (estilo "Lab work / E-Rx / Notes / Documents") */
+
 .roster-page .perfil-menu__icon--yellow {
     background: #fff8e6;
 }
@@ -894,7 +894,7 @@ footer p {
     filter: invert(20%) sepia(90%) saturate(700%) hue-rotate(340deg);
 }
  
-/* Textos */
+
 .roster-page .perfil-menu__texto {
     flex: 1;
     display: flex;
@@ -914,7 +914,7 @@ footer p {
     color: var(--cinza-texto);
 }
  
-/* Seta colorida (círculo) */
+
 .roster-page .perfil-menu__seta {
     width: 28px;
     height: 28px;
@@ -934,7 +934,7 @@ footer p {
 .roster-page .perfil-menu__seta--red     { background: var(--vermelho); }
 .roster-page .perfil-menu__seta--blue    { background: var(--azul-principal); }
  
-/* ---- Rodapé / link de voltar ---- */
+
 .roster-page .rodape-voltar {
     background: var(--cinza-fundo);
     border-top: 1px solid var(--cinza-borda);
@@ -957,7 +957,7 @@ footer p {
     display: block;
 }
 
-/* ---- Perfil: opções expansíveis sem ícones nem setas coloridas ---- */
+
 .roster-page .perfil-menu {
     list-style: none;
     margin: 0;
@@ -1106,7 +1106,7 @@ footer p {
     width: 100%;
 }
  
-/* O card em si — substituiu o retangulo.png */
+
 .escala-card {
     display: flex;
     align-items: center;
@@ -1127,7 +1127,7 @@ footer p {
     box-shadow: 0 8px 20px rgba(13, 45, 140, 0.12);
 }
  
-/* Indicador colorido à esquerda (igual ao voo-indicador da tela inicial) */
+
 .escala-card::before {
     content: "";
     width: 10px;
