@@ -4,40 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitação Enviada</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style2.css">
 </head>
 <body>
 
-<header>
-    <a href="../menu.html">
-        <img src="../img/icons8-cardápio-50.png" alt="Menu Hamburguer">Menu
+<header class="topo">
+
+    <a href="../menu.html" class="menu-link">
+        <img src="../img/icons8-cardápio-50.png" alt="Menu">
     </a>
-    <h1>Roster</h1>
-    <a href="../perfil.html">
-        <img src="../img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil">Perfil
-    </a>
-    <a href="#">
-        <img src="../img/sino.png" alt="Sino">
-    </a>
+
+    <h1 class="titulo-topo">Roster</h1>
+
+    <section class="acoes-topo">
+
+        <a href="../perfil.html" class="icone-topo">
+            <img src="../img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil">
+        </a>
+
+        <a href="#" class="icone-topo">
+            <img src="../img/bell_ring.png" alt="Notificações">
+        </a>
+
+    </section>
+
 </header>
 
-<main>
+<main class="confirmacao-conteudo">
 
-<h2>✔ Solicitação Enviada</h2>
+    <span class="confirmacao-check">✔</span>
 
-<p>Seu requerimento foi enviado.</p>
-<p>A companhia entrará em contato em breve.</p>
+    <h2 class="confirmacao-titulo">SOLICITAÇÃO<br>ENVIADA !</h2>
 
-<br>
+    <p class="confirmacao-subtitulo">A companhia entrará em<br>contato em breve</p>
 
-<a href="../index.html">
-    <button>Voltar ao Início</button>
-</a>
+    <p class="confirmacao-status">
+        <span class="confirmacao-status-icone">✉</span>
+        Status: Pendente
+    </p>
+
+    <a href="../index.html" class="confirmacao-botao">
+        VOLTAR AO INÍCIO &nbsp;»
+    </a>
 
 </main>
-
-<footer>
-    <p>Copyright © 2024 Roster.</p>
-</footer>
 
 </body>
 </html>
