@@ -282,3 +282,12 @@ body .confirmacao-botao {
 body .confirmacao-botao:hover {
     transform: scale(1.03);
 }
+
+body .confirmacao-voltar {
+    align-self: flex-start;
+}
+
+body .confirmacao-voltar img {
+    width: 32px;
+     filter: invert(16%) sepia(90%) saturate(1200%) hue-rotate(210deg) brightness(80%);
+}
