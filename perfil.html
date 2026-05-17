@@ -4,42 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roster</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body>
-    
-    <header>
-        <a href="menu.html">
-            <img src="./img/icons8-cardápio-50.png" alt="menu hamburger">Menu
-        </a>
-        <a href="">
-            <img src="img/icons8-usuário-homem-com-círculo-96.png" alt = "foto perfil">Foto de perfil
-        </a>    
-    <h1>Perfil</h1>
-    <h2>Goret Pita</h2>
-    </header>
-    <main>
-        <ul>
-            <li>
-                <a href="#">  
-                    <img src= "https://picsum.photos/400/100" alt="dados pessoais">Dados Pessoais    
-                </a>
-            </li>
-            <li>
-                <a href="#">  
-                    <img src= "https://picsum.photos/400/100" alt="Base operacional">Base Operacional   
-                </a>
-            </li>
-            <li>
-                <a href="#">  
-                    <img src= "https://picsum.photos/400/100" alt="Log out">Log out
-                </a>
-            </li>
-        </ul>
-    </main>
-    <a href="index.html">
-        <img src= "img/icons8-à-esquerda-dentro-de-um-círculo-24.png" alt="cancela solicitacao">voltar a tela inicial
+<body class="roster-page">
+
+<header class="header">
+  <a href="menu.html" class="header-menu">
+    <img src="./img/icons8-cardápio-50.png" alt="Menu Hamburguer" class="header-menu__icon">
+    <span class="header-menu__text">Menu</span>
+  </a>
+  <h1 class="header__title">Roster</h1>
+  <nav class="header-icons">
+    <a href="#" class="header-icons__link" aria-label="Notificações">
+      <img src="./img/bell_ring.png" alt="" class="header-icons__icon">
     </a>
+  </nav>
+</header>
+
+<main class="main-content">
+
+  <section class="perfil-top">
+    <figure class="perfil-top__avatar">
+      <img src="img/icons8-usuário-homem-com-círculo-96.png" alt="Foto de perfil" class="perfil-top__foto">
+    </figure>
+    <div class="perfil-top__namebar">
+      <h2 class="perfil-top__nome">Goret Pita</h2>
+      <span class="perfil-top__cargo">Tripulante</span>
+    </div>
+  </section>
+
+  <ul class="perfil-menu">
+
+    <li class="perfil-menu__item">
+    <details class="perfil-accordion">
+        <summary class="perfil-accordion__summary">
+        <span class="perfil-accordion__title">Dados Pessoais</span>
+        </summary>
+
+        <section class="perfil-accordion__content">
+        <p>Nome, matrícula, contato e outros dados do tripulante.</p>
+        </section>
+    </details>
+    </li>
+
+    <li class="perfil-menu__item">
+    <details class="perfil-accordion">
+        <summary class="perfil-accordion__summary">
+        <span class="perfil-accordion__title">Base Operacional</span>
+        </summary>
+
+        <section class="perfil-accordion__content">
+        <p>Guarulhos - GRU</p>
+        </section>
+    </details>
+    </li>
+
+  </ul>
+
+  <section class="perfil-logout">
+    <a href="#" class="perfil-logout__link">Log Out</a>
+  </section>
+
+</main>
+
+<footer class="rodape-voltar">
+  <a href="index.html" class="back-link">
+    <img src="img/icons8-à-esquerda-dentro-de-um-círculo-24.png" alt="" class="back-link__icon">
+    <span class="back-link__text">Voltar à tela inicial</span>
+  </a>
+</footer>
 
 </body>
-</html> 
+</html>

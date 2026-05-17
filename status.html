@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadigômetro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="menu.html" class="header-menu">
+            <img src="img/icons8-cardápio-50.png" alt="Menu Hamburguer" class="header-menu__icon">
+            <span class="header-menu__text">Menu</span>
+        </a>
+
+        <h1 class="header__title">Roster</h1>
+
+        <nav class="header-icons">
+            <a href="perfil.html" class="header-icons__link">
+                <img src="img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil" class="header-icons__icon">
+                <span>Perfil</span>
+            </a>
+            <a href="#" class="header-icons__link" aria-label="Notificações">
+                <img src="img/bell_ring.png" alt="" class="header-icons__icon">
+            </a>
+        </nav>
+    </header>
+
+    <main class="status-main">
+        <section class="status-card status-card-page">
+            <p class="status-titulo">
+                <img src="img/termometro.png" alt="Fadigômetro">
+                Fadigômetro
+            </p>
+
+            <p class="status-valor">55%</p>
+            <p class="status-descricao">Seu nível atual está dentro da faixa normal. Continue acompanhando antes do próximo voo.</p>
+
+            <meter class="status-barra" min="0" max="100" value="55"></meter>
+
+            <p class="status-info">
+                <span>65h voadas no mês</span>
+                <span>5 voos restantes</span>
+            </p>
+
+            <a class="btn-status" href="index.html">Voltar para o início</a>
+        </section>
+    </main>
+</body>
+</html>

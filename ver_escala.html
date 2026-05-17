@@ -3,57 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roster</title>
+    <title>Escala Mensal</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <a href="menu.html">
-            <img src="img/icons8-cardápio-50.png" alt="Menu Hamburguer">Menu
-        </a>
-        <h1>Roster</h1>
-        <a href="perfil.html">
-            <img src="img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil">Perfil
-        </a>
-        <a href="#">
-            <img src="img/bell_ring.png" alt="Sino">
+
+    <header class="header">
+        <a href="menu.html" class="header-menu">
+            <img src="img/icons8-cardápio-50.png" alt="Menu Hamburguer" class="header-menu__icon">
+            <span class="header-menu__text">Menu</span>
         </a>
 
+        <h1 class="header__title">Roster</h1>
+
+        <nav class="header-icons">
+            <a href="perfil.html" class="header-icons__link">
+                <img src="img/icons8-usuário-homem-com-círculo-24.png" alt="Perfil" class="header-icons__icon">
+                <span>Perfil</span>
+            </a>
+            <a href="#" class="header-icons__link" aria-label="Notificações">
+                <img src="img/bell_ring.png" alt="" class="header-icons__icon">
+            </a>
+        </nav>
     </header>
-    <main>
-        <a href="index.html">
-            <img src= "img/icons8-à-esquerda-dentro-de-um-círculo-24.png" alt="cancela solicitacao">voltar 
+
+    <main class="escala-main">
+
+        <a href="index.html" class="back-link">
+            <img src="img/icons8-à-esquerda-dentro-de-um-círculo-24.png" alt="" class="back-link__icon">
+            <span class="back-link__text">Voltar</span>
         </a>
-        <h2>Escala Mensal</h2>
-           <ul>
-            <li>
-                <a href="#">
-                    <img src="img/retangulo.png" alt="Escala 01">Dia 24/02 - GRU - GIG - GRU
+
+        <h2 class="escala-titulo">Escala Mensal</h2>
+
+        <ul class="escala-lista">
+
+            <li class="escala-item">
+                <a href="trade/trade.html?date=2025-02-24&route=GRU%20%E2%86%92%20GIG%20%E2%86%92%20GRU" class="escala-card">
+                    <span class="escala-card__info">
+                        <time class="escala-card__data" datetime="2025-02-24">24/02</time>
+                        <span class="escala-card__rota">GRU → GIG → GRU</span>
+                    </span>
+                    <span class="escala-card__troca" aria-hidden="true">
+                        <img src="img/trade.png" alt="">
+                    </span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img src="img/retangulo.png" alt="Escala 02">Dia 03/03 - GRU - CNF - GRU
+
+            <li class="escala-item">
+                <a href="trade/trade.html?date=2025-03-03&route=GRU%20%E2%86%92%20CNF%20%E2%86%92%20GRU" class="escala-card">
+                    <span class="escala-card__info">
+                        <time class="escala-card__data" datetime="2025-03-03">03/03</time>
+                        <span class="escala-card__rota">GRU → CNF → GRU</span>
+                    </span>
+                    <span class="escala-card__troca" aria-hidden="true">
+                        <img src="img/trade.png" alt="">
+                    </span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <img src="img/retangulo.png" alt="Escala 03">Dia 10/03 - GRU - GIG - GRU
+
+            <li class="escala-item">
+                <a href="trade/trade.html?date=2025-03-10&route=GRU%20%E2%86%92%20GIG%20%E2%86%92%20GRU" class="escala-card">
+                    <span class="escala-card__info">
+                        <time class="escala-card__data" datetime="2025-03-10">10/03</time>
+                        <span class="escala-card__rota">GRU → GIG → GRU</span>
+                    </span>
+                    <span class="escala-card__troca" aria-hidden="true">
+                        <img src="img/trade.png" alt="">
+                    </span>
                 </a>
             </li>
-                <li>
-                    <a href="#">
-                        <img src="img/retangulo.png" alt="Escala 04">Dia 17/03 - GRU - CNF - GRU
-                    </a>
-                </li>
-                 <li>   
-                    <a href="#">
-                        <img src="img/retangulo.png" alt="Escala 05">Dia 24/03 - GRU - GIG - GRU
-                    </a>
-                </li>
-                 <li>
-                    <a href="#">
-                        <img src="img/retangulo.png" alt="Escala 06">Dia 31/03 - GRU - CNF - GRU
-                    </a>            
-                </li>
+
+            <li class="escala-item">
+                <a href="trade/trade.html?date=2025-03-17&route=GRU%20%E2%86%92%20CNF%20%E2%86%92%20GRU" class="escala-card">
+                    <span class="escala-card__info">
+                        <time class="escala-card__data" datetime="2025-03-17">17/03</time>
+                        <span class="escala-card__rota">GRU → CNF → GRU</span>
+                    </span>
+                    <span class="escala-card__troca" aria-hidden="true">
+                        <img src="img/trade.png" alt="">
+                    </span>
+                </a>
+            </li>
+
+            <li class="escala-item">
+                <a href="trade/trade.html?date=2025-03-24&route=GRU%20%E2%86%92%20GIG%20%E2%86%92%20GRU" class="escala-card">
+                    <span class="escala-card__info">
+                        <time class="escala-card__data" datetime="2025-03-24">24/03</time>
+                        <span class="escala-card__rota">GRU → GIG → GRU</span>
+                    </span>
+                    <span class="escala-card__troca" aria-hidden="true">
+                        <img src="img/trade.png" alt="">
+                    </span>
+                </a>
+            </li>
+
+            <li class="escala-item">
+                <a href="trade/trade.html?date=2025-03-31&route=GRU%20%E2%86%92%20CNF%20%E2%86%92%20GRU" class="escala-card">
+                    <span class="escala-card__info">
+                        <time class="escala-card__data" datetime="2025-03-31">31/03</time>
+                        <span class="escala-card__rota">GRU → CNF → GRU</span>
+                    </span>
+                    <span class="escala-card__troca" aria-hidden="true">
+                        <img src="img/trade.png" alt="">
+                    </span>
+                </a>
+            </li>
+
         </ul>
+
     </main>
+
+</body>
+</html>

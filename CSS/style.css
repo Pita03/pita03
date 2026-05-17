@@ -274,6 +274,63 @@ main {
     font-weight: 600;
 }
 
+/* Tela simples do Fadigômetro */
+.status-main {
+    flex: 1;
+    padding: 22px 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cinza-fundo);
+}
+
+.status-card-page {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    padding: 24px 20px 22px;
+}
+
+.status-card-page .status-titulo {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.status-valor {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--azul-principal);
+    line-height: 1;
+    margin: 4px 0 10px;
+}
+
+.status-descricao {
+    font-size: 0.95rem;
+    color: var(--texto-dark);
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+
+.status-card-page .status-barra {
+    margin: 10px 0 14px;
+}
+
+.btn-status {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: var(--sombra);
+}
+
+.btn-status:hover {
+    background: var(--azul-claro);
+}
+
 footer {
     background-color: var(--cinza-fundo);
     border-top: 1px solid var(--cinza-borda);
@@ -571,4 +628,553 @@ footer p {
 .btn-nova-oferta:hover {
   background: var(--azul-claro);
   transform: translateY(-3px);
+}
+
+/* PERFIL — opções empilhadas, clean com linhas horizontais */
+.roster-page .main-content {
+    padding: 0;
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+}
+
+.roster-page .perfil-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 0 12px;
+    background: var(--branco);
+}
+
+.roster-page .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-top: 1px solid var(--cinza-borda);
+    border-bottom: 1px solid var(--cinza-borda);
+    flex: 1 1 auto;
+}
+
+.roster-page .menu-list__item {
+    margin: 0;
+}
+
+.roster-page .perfil-item {
+    background: var(--branco);
+    border-radius: 0;
+    box-shadow: none;
+    border-left: none;
+    border-right: none;
+}
+
+.roster-page .perfil-item__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    cursor: pointer;
+    font-weight: 800;
+    color: var(--texto-dark);
+    background: transparent;
+    user-select: none;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+.roster-page .perfil-item__summary::-webkit-details-marker { display: none; }
+.roster-page .perfil-item__summary::marker { display: none; }
+
+.roster-page .perfil-item__summary::after {
+    content: ""; /* limpa chevron para visual mais clean */
+}
+
+.roster-page .perfil-item__title { font-size: 1rem; }
+
+.roster-page section.perfil-item__content {
+    padding: 14px 18px;
+    background: var(--cinza-fundo);
+    border-top: none;
+    font-size: 0.95rem;
+}
+
+.roster-page .perfil-item__link {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.roster-page .back-link { margin: 12px 18px 20px; }
+
+
+.roster-page body {
+    background: var(--branco);
+}
+ 
+/* ---- Header ---- */
+.roster-page .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+ 
+.roster-page .header-menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+ 
+.roster-page .header-menu__icon {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+ 
+.roster-page .header__title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--branco);
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+ 
+.roster-page .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+ 
+.roster-page .header-icons__icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+    filter: brightness(0) invert(1);
+}
+ 
+/* ---- Topo do perfil (fundo azul + avatar + barra de nome) ---- */
+.roster-page .main-content {
+    padding: 0;
+    background: var(--branco);
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+}
+ 
+.roster-page .perfil-top {
+    background: var(--azul-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0 0;
+    gap: 0;
+}
+ 
+.roster-page .perfil-top__avatar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+ 
+.roster-page .perfil-top__foto {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.15);
+    filter: brightness(0) invert(1);     /* se for ícone monocromático */
+    display: block;
+}
+ 
+/* Barra azul-médio com nome e cargo (inspirada no "Dr. John Smith / Neurologist") */
+.roster-page .perfil-top__namebar {
+    width: 100%;
+    margin-top: 14px;
+    background: var(--azul-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 22px;
+}
+ 
+.roster-page .perfil-top__nome {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--branco);
+    margin: 0;
+}
+ 
+.roster-page .perfil-top__cargo {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+}
+ 
+/* ---- Lista de opções do perfil ---- */
+.roster-page .perfil-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+ 
+.roster-page .perfil-menu__item {
+    border-bottom: 1px solid var(--cinza-borda);
+}
+ 
+.roster-page .perfil-menu__link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: var(--texto-dark);
+    background: var(--branco);
+    transition: background 0.15s ease;
+}
+ 
+.roster-page .perfil-menu__link:hover {
+    background: var(--cinza-fundo);
+}
+ 
+/* Caixa do ícone */
+.roster-page .perfil-menu__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+ 
+.roster-page .perfil-menu__icon img {
+    width: 22px;
+    height: 22px;
+}
+ 
+/* Cores dos ícones (estilo "Lab work / E-Rx / Notes / Documents") */
+.roster-page .perfil-menu__icon--yellow {
+    background: #fff8e6;
+}
+.roster-page .perfil-menu__icon--yellow img {
+    filter: invert(55%) sepia(80%) saturate(800%) hue-rotate(10deg);
+}
+ 
+.roster-page .perfil-menu__icon--orange {
+    background: #fff0e0;
+}
+.roster-page .perfil-menu__icon--orange img {
+    filter: invert(40%) sepia(90%) saturate(900%) hue-rotate(355deg);
+}
+ 
+.roster-page .perfil-menu__icon--red {
+    background: #fdecea;
+}
+.roster-page .perfil-menu__icon--red img {
+    filter: invert(20%) sepia(90%) saturate(700%) hue-rotate(340deg);
+}
+ 
+/* Textos */
+.roster-page .perfil-menu__texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+ 
+.roster-page .perfil-menu__titulo {
+    font-size: 0.97rem;
+    font-weight: 800;
+    color: var(--texto-dark);
+}
+ 
+.roster-page .perfil-menu__sub {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--cinza-texto);
+}
+ 
+/* Seta colorida (círculo) */
+.roster-page .perfil-menu__seta {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    font-size: 1.1rem;
+    font-weight: 900;
+    flex-shrink: 0;
+    line-height: 1;
+}
+ 
+.roster-page .perfil-menu__seta--yellow  { background: #e8a000; }
+.roster-page .perfil-menu__seta--orange  { background: #c45500; }
+.roster-page .perfil-menu__seta--red     { background: var(--vermelho); }
+.roster-page .perfil-menu__seta--blue    { background: var(--azul-principal); }
+ 
+/* ---- Rodapé / link de voltar ---- */
+.roster-page .rodape-voltar {
+    background: var(--cinza-fundo);
+    border-top: 1px solid var(--cinza-borda);
+    padding: 14px 20px;
+}
+ 
+.roster-page .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cinza-texto);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+}
+ 
+.roster-page .back-link__icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+/* ---- Perfil: opções expansíveis sem ícones nem setas coloridas ---- */
+.roster-page .perfil-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 auto;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+.roster-page .perfil-menu__item {
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+.roster-page .perfil-menu__item:last-child {
+    border-bottom: none;
+}
+
+.roster-page .perfil-accordion {
+    background: var(--branco);
+}
+
+.roster-page .perfil-accordion__summary {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 20px;
+    padding-right: 44px;
+    font-size: 0.97rem;
+    font-weight: 800;
+    color: var(--texto-dark);
+    list-style: none;
+    user-select: none;
+}
+
+.roster-page .perfil-menu__item:first-child .perfil-accordion__summary {
+    padding: 0px 20px 10px;
+}
+
+.roster-page .perfil-accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.roster-page .perfil-accordion__summary::marker {
+    display: none;
+}
+
+.roster-page .perfil-accordion__summary::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-35%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid var(--texto-dark);
+}
+
+.roster-page .perfil-accordion__title {
+    display: block;
+}
+
+.roster-page .perfil-accordion__content {
+    padding: 0 20px 16px;
+    background: var(--cinza-fundo);
+    border-top: 1px solid var(--cinza-borda);
+    color: var(--cinza-texto);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.roster-page .perfil-menu__item:nth-child(2) .perfil-accordion__content {
+    padding-bottom: 0;
+}
+
+.roster-page .perfil-menu__item:nth-child(2) .perfil-accordion__summary {
+    padding-bottom: 4px;
+}
+
+.roster-page .perfil-menu__item:nth-child(2) .perfil-accordion__content p {
+    margin-bottom: 0;
+}
+
+.roster-page .perfil-accordion__content p {
+    margin: 12px 0 0;
+}
+
+.roster-page .perfil-menu__link--logout {
+    display: block;
+    padding: 16px 20px;
+    background: var(--branco);
+    color: var(--texto-dark);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.roster-page .perfil-menu__link--logout:hover {
+    background: var(--cinza-fundo);
+}
+
+.roster-page .perfil-logout {
+    margin-top: 165px;
+    padding: 10px 20px 18px;
+    border-top: 1px solid var(--cinza-borda);
+    background: var(--branco);
+}
+
+.roster-page .perfil-logout__link {
+    display: inline-block;
+    color: var(--vermelho);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 0.97rem;
+}
+
+.roster-page .perfil-logout__link:hover {
+    text-decoration: underline;
+}
+
+/*Visualização de Escala*/
+
+.escala-main {
+    padding: 16px 16px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.escala-titulo {
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: var(--texto-dark);
+    letter-spacing: 0.4px;
+}
+ 
+.escala-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.escala-item {
+    width: 100%;
+}
+ 
+/* O card em si — substituiu o retangulo.png */
+.escala-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    background: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    box-shadow: var(--sombra);
+    text-decoration: none;
+    color: var(--texto-dark);
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+ 
+.escala-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13, 45, 140, 0.12);
+}
+ 
+/* Indicador colorido à esquerda (igual ao voo-indicador da tela inicial) */
+.escala-card::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--azul-principal);
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+ 
+.escala-card__data {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--cinza-texto);
+    min-width: 40px;
+}
+ 
+.escala-card__rota {
+    font-size: 0.97rem;
+    font-weight: 900;
+    color: var(--texto-dark);
+    letter-spacing: 0.3px;
+}
+
+.escala-card__info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+}
+
+.escala-card__troca {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.escala-card__troca img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.trade-jornada-selecionada {
+    font-size: 0.9rem;
+    color: var(--cinza-texto);
+    margin-top: -2px;
 }
