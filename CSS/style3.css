@@ -1,0 +1,311 @@
+/* Boarding - Suporte de Embarque */
+
+.boarding-main {
+    padding: 20px 16px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.boarding-titulo {
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: var(--texto-dark);
+}
+
+.boarding-subtitulo {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--texto-dark);
+    margin-top: 6px;
+}
+
+/* Botão grande de emergência */
+.btn-emergencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--vermelho);
+    color: var(--branco);
+    padding: 22px 18px;
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(192, 57, 43, 0.35);
+}
+
+.btn-emergencia:hover {
+    background: #a83224;
+    transform: translateY(-2px);
+}
+
+.btn-emergencia img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+/* Cards de FAQ */
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    box-shadow: var(--sombra);
+    color: var(--texto-dark);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.97rem;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13, 45, 140, 0.12);
+}
+
+.faq-card__icone {
+    width: 40px;
+    height: 40px;
+    background: var(--cinza-fundo);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.faq-card__icone img {
+    width: 22px;
+    height: 22px;
+}
+
+.faq-card__seta {
+    margin-left: auto;
+    color: var(--cinza-texto);
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* paginas de conteudo (bagagem, documentação, prioridade) */
+.info-main {
+    padding: 16px 16px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.info-titulo {
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: var(--texto-dark);
+}
+
+.info-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-lista li {
+    background: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: var(--texto-dark);
+    position: relative;
+    padding-left: 28px;
+}
+
+.info-lista li::before {
+    content: "•";
+    color: var(--azul-principal);
+    font-weight: 900;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    line-height: 1;
+}
+
+/* Tela de confirmação de emergência */
+.alerta-main {
+    padding: 32px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+.alerta-icone {
+    width: 90px;
+    height: 90px;
+    background: rgba(192, 57, 43, 0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--vermelho);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.alerta-titulo {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--texto-dark);
+}
+
+.alerta-descricao {
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 360px;
+}
+
+.alerta-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 8px;
+}
+
+.btn-alerta-confirmar {
+    background: var(--vermelho);
+    color: var(--branco);
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(192, 57, 43, 0.25);
+}
+
+.btn-alerta-confirmar:hover {
+    background: #a83224;
+    transform: translateY(-2px);
+}
+
+.btn-alerta-cancelar {
+    background: var(--branco);
+    color: var(--texto-dark);
+    border: 2px solid var(--cinza-borda);
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-alerta-cancelar:hover {
+    background: var(--cinza-fundo);
+}
+
+/* Tela "Equipe a caminho" */
+.emergencia-main {
+    padding: 36px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    flex: 1;
+}
+
+.emergencia-icone {
+    width: 110px;
+    height: 110px;
+    background: rgba(13, 45, 140, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emergencia-icone img {
+    width: 60px;
+    height: 60px;
+}
+
+.emergencia-titulo {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--azul-principal);
+}
+
+.emergencia-descricao {
+    color: var(--cinza-texto);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 360px;
+}
+
+.emergencia-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--cinza-fundo);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--texto-dark);
+    margin-top: 4px;
+}
+
+.emergencia-status::before {
+    content: "●";
+    color: #2ecc71;
+    font-size: 0.8rem;
+}
+
+.btn-emergencia-voltar {
+    margin-top: 10px;
+    background: var(--azul-principal);
+    color: var(--branco);
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: var(--sombra);
+}
+
+.btn-emergencia-voltar:hover {
+    background: var(--azul-claro);
+}
+
+/* link p voltar - rodapes
+.link-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cinza-texto);
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+}
+
+.link-voltar img {
+    width: 22px;
+    height: 22px;
+}
